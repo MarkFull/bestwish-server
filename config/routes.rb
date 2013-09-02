@@ -1,4 +1,8 @@
 Bestwish::Application.routes.draw do
+  root 'backstage#index'
+  get '/backstage', to: 'backstage#index'
+  resources :wishes
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
